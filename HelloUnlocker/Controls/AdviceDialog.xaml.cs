@@ -28,20 +28,11 @@ namespace HelloUnlocker.Controls
                 this.Hide();
                 return;
             }
-            //else
-            //{
-            //    bool keyCredentialAvailable = await KeyCredentialManager.IsSupportedAsync();
-            //    KeyCredentialRetrievalResult keyCreationResult = await KeyCredentialManager.RequestCreateAsync("igor.damiani@hotmail.com",
-            //        KeyCredentialCreationOption.ReplaceExisting);
-
-            //    this.Success = (keyCreationResult.Status == KeyCredentialStatus.Success);
-            //    this.Hide();
-            //    return;
-            //}
         }
 
         private void ContentDialog_SecondaryButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args)
         {
+            args.Cancel = true;
             this.Success = false;
         }
     }

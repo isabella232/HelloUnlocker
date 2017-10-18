@@ -10,11 +10,13 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel>
-            <TextBox />
-            <TextBox />
-            <Button />
-            <Button />
-            <ComboBox />
+            <TextBox PlaceholderText="please insert any value you want" Margin="8" />
+            <TextBox Text="My surname, my name" Margin="8" />
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Click here!" Margin="8" Padding="24,2" />
+                <Button Content="Click here!" Margin="8" Padding="24,2" />
+            </StackPanel>
+            <ComboBox Margin="8" Width="160" />
         </StackPanel>
 
         <ctl:Lock />
