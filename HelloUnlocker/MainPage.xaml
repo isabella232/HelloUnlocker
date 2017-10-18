@@ -14,11 +14,21 @@
             <TextBox Text="My surname, my name" Margin="8" />
             <StackPanel Orientation="Horizontal">
                 <Button Content="Click here!" Margin="8" Padding="24,2" />
-                <Button Content="Click here!" Margin="8" Padding="24,2" />
+                <Button Content="Click here!" Margin="0,8,8,8" Padding="24,2" />
+                <Button Content="Click here!" Margin="0,8,8,8" Padding="24,2" />
+                <Button Content="Click here!" Margin="0,8,8,8" Padding="24,2" />
             </StackPanel>
-            <ComboBox Margin="8" Width="160" />
+            <ComboBox Margin="8" Width="160">
+                <x:String>Voice 1</x:String>
+                <x:String>Voice 2</x:String>
+                <x:String>Voice 3</x:String>
+                <x:String>Voice 4</x:String>
+                <x:String>Voice 5</x:String>
+                <x:String>Voice 6</x:String>
+            </ComboBox>
         </StackPanel>
 
+        <Image Source="Landscape.png" VerticalAlignment="Top" HorizontalAlignment="Right" Width="400" Margin="8" />
         <ctl:Lock />
 
     </Grid>
